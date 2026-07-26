@@ -1,0 +1,27 @@
+# Entorno Virtual
+venv/
+.venv/
+env/
+
+# Cache de Python y archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Base de datos vectorial local (ChromaDB)
+chroma_db/
+*.chroma
+
+# Archivos de configuración del sistema y SO
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Documentos PDF de prueba (para no subir archivos pesados o personales)
+*.pdf
+
+# Variables de entorno
+.env

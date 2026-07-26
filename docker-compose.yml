@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  pdf-chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pdf_chatbot_cpu
+    ports:
+      - "7860:7860"
+    deploy:
+      resources:
+        limits:
+          memory: 10g
+        reservations:
+          memory: 4g
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
